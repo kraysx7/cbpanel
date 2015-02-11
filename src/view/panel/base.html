@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap-redesign.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/panel-base.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/panel.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    {% block head %}
+    {% endblock %}
+
+
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <div id="logo">
+                </div>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="/profile">Личный кабинет</a></li>                
+                        
+                        <li><a href="/logout">Выход</a></li>
+                    </ul>     
+                </div> <!-- topmenu -->
+            </div>
+        </div>
+    </div> <!-- /navbar -->
+
+    <div class="container">
+            <div class="row">
+
+                <div class="tabbable tabs-left">             
+                    {% block tabs %}
+
+                        <ul class="nav nav-tabs" data-spy="affix" data-offset-top="50" >
+                                    <li class="acc-info">
+
+                                        <div class="list">
+                                            <div><a href="/panel/profile">{{ user_data.name }}</a></div>
+                                            <div>Баланс: {{ user_data.balance }} <span class="rur">P</span></div>
+                                            <div>Клиентский номер: 9541</div>
+                                        </div>
+                                    </li>
+                                    {% for tab in tabs %}
+
+                                        {% if tab.tab_id == active_tab %}
+                                        <li class="active"><a href="{{ tab.tab_href }}"><i class="{{ tab.tab_img_class }}"></i>{{ tab.tab_title }}</a></li>                
+                                        {% else %}
+                                        <li><a href="{{ tab.tab_href }}"><i class="{{ tab.tab_img_class }}"></i>{{ tab.tab_title }}</a></li>
+                                        {% endif %}
+             
+                                    {% endfor %}
+                            <li style="display: none" class="acc-info message-block" id="member-message">       
+                            </li>
+                        </ul>
+                    {% endblock %}
+                       
+                    <div class="tab-content active">
+                        <div class="tab-pane active">
+                        {% block tab_content %}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /row -->
+    </div>
+
+    <div class="navbar-fixed-bottom" style="display: none;">
+        <div class="navbar-bottom-inner">
+            <div class="container">
+                 <span>Clooud Hosting [ clooud.ru ] (c) 2012 - 2014</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

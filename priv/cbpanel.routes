@@ -1,0 +1,43 @@
+% Routes file.
+
+% Formats: 
+%   {"/some/route", [{controller, "Controller"}, {action, "Action"}]}.
+%   {"/some/route", [{controller, "Controller"}, {action, "Action"}, {id, "42"}]}.
+%   {"/(some|any)/route/(\\d+)", [{controller, '$1'}, {action, "Action"}, {id, '$2'}]}.
+%   {"/some/route/(?<route_id>\\d+)", [{controller, "Controller"}, {action, "Action"}, {id, '$route_id'}]}.
+%   {"/some/route", [{application, some_app}, {controller, "Controller"}, {action, "Action"}, {id, "42"}]}.
+%
+%   {404, [{controller, "Controller"}, {action, "Action"}]}.
+%   {404, [{controller, "Controller"}, {action, "Action"}, {id, "42"}]}.
+%   {404, [{application, some_app}, {controller, "Controller"}, {action, "Action"}, {id, "42"}]}.
+%
+% Note that routing across applications results in a 302 redirect.
+
+% Front page
+{"/", [{controller, "main"}, {action, "index"}]}.
+{"/login",         [{controller, "main"}, {action, "login"}]}.
+{"/logout",        [{controller, "main"}, {action, "logout"}]}.
+{"/register",      [{controller, "main"}, {action, "register"}]}.
+%{"/vps_table",     [{controller, "main"}, {action, "vps_table"}]}.
+%{"/hosting_table", [{controller, "main"}, {action, "hosting_table"}]}.
+
+
+{"/panel/profile",                      [{controller, "profile"}, {action, "index"}]}.
+{"/panel/profile/edit",                 [{controller, "profile"}, {action, "edit"}]}.
+{"/panel/profile/finances",             [{controller, "profile"}, {action, "finances"}]}.
+{"/panel/webhosting",                   [{controller, "webhosting"}, {action, "index"}]}.
+{"/panel/webhosting/create_order",      [{controller, "webhosting"}, {action, "create_order"}]}.
+{"/panel/vps",                          [{controller, "vps"}, {action, "index"}]}.
+{"/panel/monitoring",                   [{controller, "monitoring"}, {action, "index"}]}.
+{"/panel/support",                      [{controller, "support"}, {action, "index"}]}.
+
+{"/services",                           [{controller, "webhosting"}, {action, "index"}]}.
+
+{"/create_order",                       [{controller, "panel"}, {action, "create_order"}]}.
+{"/create_order/(?<service_id>[0-9]+)", [{controller, "panel"}, {action, "create_order"}, {service_id, '$service_id'}]}.
+
+% 404 File Not Found handler
+% {404, [{controller, "world"}, {action, "lost"}]}.
+
+% 500 Internal Error handler (only invoked in production)
+% {500, [{controller, "world"}, {action, "calamity"}]}.

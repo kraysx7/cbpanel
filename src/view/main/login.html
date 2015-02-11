@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/main-base.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/login.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <div id="logo"></div>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="/about">О нас</a></li>
+                        <li><a href="/profile">Техподдержка</a></li>
+                        <li><a href="/login">Войти</a></li>
+						<li><a href="/register">Регистрация</a></li>
+                    </ul>     
+                </div> <!-- topmenu -->
+            </div>
+        </div>
+    </div> <!-- /navbar -->
+
+    <div class="container">
+            <div class="row">
+				<div class="col-md-2"></div>
+
+				<div class="col-md-8">
+                    <div id="login-wrapper">
+                        <form id="login" action="/login" method="POST">
+                            <h1>Авторизация</h1>
+                            <fieldset id="inputs">
+                                <input id="username" name="username" type="text" placeholder="Логин" autofocus required>   
+                                <input id="password" name="password" type="password" placeholder="Пароль" required>
+                            </fieldset>
+                            <fieldset id="actions">
+                                <input type="submit" id="submit" value="ВОЙТИ">
+                                <a href="/restore_pass">Забыли пароль?</a><a href="/register">Регистрация</a>
+                            </fieldset>
+                        </form>
+                    </div>
+				</div>
+
+				<div class="col-md-2"></div>
+            </div><!-- /row -->
+    </div>
+
+    <div class="footer navbar-fixed-bottom" style="display: block;">
+        <div class="footer-info">
+            <div class="container">
+
+                <div class="row">
+
+                   <div class="col-md-3">
+                        <p class="dt">О сервисе</p>
+
+                        <a href="consult.html">Обзор</a><br />
+                        <a href="projecting.html">Возможности</a><br />
+                        <a href="development.html">Стоимость</a><br />
+                        <a href="development.html">Партнёрская программа</a><br />
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <p class="dt">О компании</p>
+
+                        <a href="about.html">История</a><br />
+                        <a href="about.html">Клиенты</a><br />
+                        <a href="about.html">Реквизиты</a><br />
+                        <a href="about.html">Лицензии</a><br />
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <p class="dt">Контакты</p>
+
+                        <a href="about.html">Отправить сообщение</a><br />
+                        <a href="about.html">Skype: clooud_support</a><br />
+                        <a href="about.html">mail: support@clooud.ru</a><br />
+                    </div>
+
+                    <div class="col-md-3" style="height: 25px; padding-top: 100px;">
+                        <img src="images/feed_icon_rss.png" style="width: 25px; height: 25px;">
+                    </div>
+                </div><!-- /row -->
+
+            </div>
+        </div>
+
+        <div class="footer-cont">
+            <div class="container">
+
+                <p class="text-muted">New generation cloud hosting</p>
+
+
+
+                 <span  class="text-muted">Powered by Clodex Lab [clodex.ru]</span>
+            </div><!-- /container -->
+
+        </div><!-- /footer-cont -->
+    </div><!-- /footer -->
+
+ 
+    <div class="navbar-fixed-bottom" style="display: none;">
+        <div class="navbar-bottom-inner">
+            <div class="container">
+                 <span>Clooud Hosting [ clooud.ru ] (c) 2012 - 2014</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+2015-02-11 16:06:07 =ERROR REPORT====
+** Generic server <0.262.0> terminating 
+** Last message in was {route,"/panel/webhosting"}
+** When Server state == {state,cbpanel,[],45086,49183,53280}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2015-02-11 16:06:07 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 16118
+  neighbours:
+2015-02-11 16:06:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.262.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,cbpanel},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-02-11 16:06:10 =ERROR REPORT====
+** Generic server <0.290.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,cbpanel,[],57376,61471,65566}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2015-02-11 16:06:10 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.290.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 15977
+  neighbours:
+2015-02-11 16:06:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.290.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,cbpanel},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-02-11 16:08:16 =ERROR REPORT====
+GET / [cbpanel] 404 0ms2015-02-11 16:08:39 =ERROR REPORT====
+** Generic server <0.262.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,cbpanel,[],45086,49183,53280}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2015-02-11 16:08:39 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 3530
+  neighbours:
+2015-02-11 16:08:39 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.262.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,cbpanel},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-02-11 16:09:08 =ERROR REPORT====
+** Generic server <0.262.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,cbpanel,[],45086,49183,53280}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2015-02-11 16:09:08 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.262.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 2662
+  neighbours:
+2015-02-11 16:09:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.262.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,cbpanel},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-02-11 16:09:09 =ERROR REPORT====
+** Generic server <0.290.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,cbpanel,[],57376,61471,65566}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2015-02-11 16:09:09 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.290.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,737}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.261.0>,boss_web,boss_sup,<0.93.0>]
+    messages: []
+    links: [<0.261.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 2661
+  neighbours:
+2015-02-11 16:09:09 =SUPERVISOR REPORT====
+     Supervisor: {<0.261.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.290.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,cbpanel},{controllers,[]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2015-02-11 16:13:55 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-02-11 16:13:55 =ERROR REPORT====
+GET / [cbpanel] 500 0ms2015-02-11 16:16:58 =ERROR REPORT====
+GET /login [cbpanel] 404 0ms2015-02-11 16:17:04 =ERROR REPORT====
+GET /login [cbpanel] 404 0ms2015-02-11 16:17:27 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:27 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:30 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:30 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:31 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:31 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:32 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:32 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:17:35 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:18:43 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:18:43 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:18:46 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-02-11 16:18:46 =ERROR REPORT====
+POST /login [cbpanel] 500 0ms2015-02-11 16:20:15 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-02-11 16:20:15 =ERROR REPORT====
+POST /login [cbpanel] 500 0ms2015-02-11 16:21:53 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-02-11 16:21:53 =ERROR REPORT====
+POST /login [cbpanel] 500 0ms2015-02-11 16:21:56 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:22:00 =ERROR REPORT====
+"Error in controller, see console.log for details\n"
+2015-02-11 16:22:00 =ERROR REPORT====
+POST /login [cbpanel] 500 0ms2015-02-11 16:23:53 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:24:01 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:24:18 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:24:19 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:24:19 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:24:22 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:25:36 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:25:52 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:33:48 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:33:48 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:01 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:01 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:02 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:03 =ERROR REPORT====
+GET /about [cbpanel] 404 0ms2015-02-11 16:34:05 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:06 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:07 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:07 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:07 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:08 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:09 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:10 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:10 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:10 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:12 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:12 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:12 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:13 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:13 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:13 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:27 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:34:29 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:06 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:06 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:23 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:28 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:32 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:33 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:34 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:34 =ERROR REPORT====
+GET /about [cbpanel] 404 0ms2015-02-11 16:35:44 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:35:44 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:36:14 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:36:37 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:36:39 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:59:08 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:59:08 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:59:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 16:59:16 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:21 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:21 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:23 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:23 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:25 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:26 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:27 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:28 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:30 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:31 =ERROR REPORT====
+GET /about [cbpanel] 404 0ms2015-02-11 17:34:33 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:34 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:34:53 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:35:00 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:35:01 =ERROR REPORT====
+GET /about [cbpanel] 404 0ms2015-02-11 17:35:04 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:37:27 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:37:28 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:09 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:11 =ERROR REPORT====
+GET /about [cbpanel] 404 0ms2015-02-11 17:44:13 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:13 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:14 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:15 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:15 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:16 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:16 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:16 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:17 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:17 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:19 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:20 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:21 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:22 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:23 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:24 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:24 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:25 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:25 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:25 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:33 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:44:33 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:45:09 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:45:15 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:45:19 =ERROR REPORT====
+GET /development.html [cbpanel] 404 0ms2015-02-11 17:59:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:59:11 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms2015-02-11 17:59:31 =ERROR REPORT====
+GET /images/feed_icon_rss.png [cbpanel] 404 0ms

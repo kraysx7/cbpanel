@@ -1,0 +1,295 @@
+2015-02-11 16:06:07.380 [error] <0.262.0> gen_server <0.262.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-02-11 16:06:07.380 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 737
+2015-02-11 16:06:07.380 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,cbpanel},{controllers,[]}]) at <0.262.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-02-11 16:06:07.669 [error] <0.288.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.262.0>,{route,"/panel/webhosting"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-02-11 16:06:10.646 [error] <0.290.0> gen_server <0.290.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-02-11 16:06:10.647 [error] <0.290.0> CRASH REPORT Process <0.290.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 737
+2015-02-11 16:06:10.647 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,cbpanel},{controllers,[]}]) at <0.290.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-02-11 16:06:10.647 [error] <0.292.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.290.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-02-11 16:08:16.817 [error] <0.288.0> GET / [cbpanel] 404 0ms
+2015-02-11 16:08:39.094 [error] <0.262.0> gen_server <0.262.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-02-11 16:08:39.094 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 737
+2015-02-11 16:08:39.094 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,cbpanel},{controllers,[]}]) at <0.262.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-02-11 16:08:39.393 [error] <0.288.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.262.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-02-11 16:09:08.938 [error] <0.262.0> gen_server <0.262.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-02-11 16:09:08.939 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 737
+2015-02-11 16:09:08.939 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,cbpanel},{controllers,[]}]) at <0.262.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-02-11 16:09:09.206 [error] <0.288.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.262.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-02-11 16:09:09.972 [error] <0.290.0> gen_server <0.290.0> terminated with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172
+2015-02-11 16:09:09.972 [error] <0.290.0> CRASH REPORT Process <0.290.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in gen_server:terminate/6 line 737
+2015-02-11 16:09:09.973 [error] <0.261.0> Supervisor {<0.261.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,cbpanel},{controllers,[]}]) at <0.290.0> exit with reason bad argument in call to erlang:list_to_atom(undefined) in boss_router_controller:route/2 line 172 in context child_terminated
+2015-02-11 16:09:09.973 [error] <0.292.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{badarg,
+          [{erlang,list_to_atom,[undefined],[]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,172}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,580}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.290.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]
+2015-02-11 16:13:55.075 [error] <0.294.0>@boss_web_controller:call_controller_action:319 Error in controller error:undef Stacktrace: [{commons,is_logined,["ba74eb4b3affc2a22d40f793541503b656cac402"],[]},{cbpanel_main_controller,index,3,[{file,"/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},{line,13}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-02-11 16:13:55.197 [error] <0.294.0> Error in controller, see console.log for details
+
+2015-02-11 16:13:55.300 [error] <0.294.0> GET / [cbpanel] 500 0ms
+2015-02-11 16:16:58.347 [error] <0.301.0> GET /login [cbpanel] 404 0ms
+2015-02-11 16:17:04.461 [error] <0.305.0> GET /login [cbpanel] 404 0ms
+2015-02-11 16:17:27.659 [error] <0.302.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:27.685 [error] <0.301.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:30.124 [error] <0.307.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:30.157 [error] <0.309.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:31.258 [error] <0.313.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:31.593 [error] <0.317.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:32.092 [error] <0.321.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:32.703 [error] <0.325.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:17:35.648 [error] <0.329.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:18:43.757 [error] <0.301.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:18:43.795 [error] <0.302.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:18:46.054 [error] <0.305.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{gen,call,
+               [{rex,"undef"},
+                '$gen_call',
+                {call,db_api,get_user,["kray","123"],<0.148.0>},
+                infinity],
+               [{file,"gen.erl"},{line,149}]},
+           {gen_server,call,3,[{file,"gen_server.erl"},{line,186}]},
+           {rpc,do_call,3,[{file,"rpc.erl"},{line,335}]},
+           {cbpanel_main_controller,login,3,
+               [{file,
+                    "/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},
+                {line,35}]},
+           {boss_web_controller,call_controller_action,3,
+               [{file,"src/boss/boss_web_controller.erl"},{line,316}]},
+           {boss_web_controller,apply_action,4,
+               [{file,"src/boss/boss_web_controller.erl"},{line,308}]},
+           {boss_web_controller,execute_action_inner,9,
+               [{file,"src/boss/boss_web_controller.erl"},{line,287}]},
+           {boss_web_controller_handle_request,process_dynamic_request,5,
+               [{file,"src/boss/boss_web_controller_handle_request.erl"},
+                {line,254}]}]},
+      {gen_server,call,
+          [{rex,"undef"},
+           {call,db_api,get_user,["kray","123"],<0.148.0>},
+           infinity]}} Stacktrace: [{rpc,rpc_check,1,[{file,"rpc.erl"},{line,360}]},{cbpanel_main_controller,login,3,[{file,"/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},{line,35}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-02-11 16:18:46.055 [error] <0.305.0> Error in controller, see console.log for details
+
+2015-02-11 16:18:46.373 [error] <0.305.0> POST /login [cbpanel] 500 0ms
+2015-02-11 16:20:15.022 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{gen,call,
+               [{rex,"undef"},
+                '$gen_call',
+                {call,db_api,get_user,["kray","123"],<0.148.0>},
+                infinity],
+               [{file,"gen.erl"},{line,149}]},
+           {gen_server,call,3,[{file,"gen_server.erl"},{line,186}]},
+           {rpc,do_call,3,[{file,"rpc.erl"},{line,335}]},
+           {cbpanel_main_controller,login,3,
+               [{file,
+                    "/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},
+                {line,35}]},
+           {boss_web_controller,call_controller_action,3,
+               [{file,"src/boss/boss_web_controller.erl"},{line,316}]},
+           {boss_web_controller,apply_action,4,
+               [{file,"src/boss/boss_web_controller.erl"},{line,308}]},
+           {boss_web_controller,execute_action_inner,9,
+               [{file,"src/boss/boss_web_controller.erl"},{line,287}]},
+           {boss_web_controller_handle_request,process_dynamic_request,5,
+               [{file,"src/boss/boss_web_controller_handle_request.erl"},
+                {line,254}]}]},
+      {gen_server,call,
+          [{rex,"undef"},
+           {call,db_api,get_user,["kray","123"],<0.148.0>},
+           infinity]}} Stacktrace: [{rpc,rpc_check,1,[{file,"rpc.erl"},{line,360}]},{cbpanel_main_controller,login,3,[{file,"/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},{line,35}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-02-11 16:20:15.022 [error] <0.308.0> Error in controller, see console.log for details
+
+2015-02-11 16:20:15.023 [error] <0.308.0> POST /login [cbpanel] 500 0ms
+2015-02-11 16:21:53.964 [error] <0.311.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{gen,call,
+               [{rex,"undef"},
+                '$gen_call',
+                {call,db_api,get_user,["kray","123"],<0.148.0>},
+                infinity],
+               [{file,"gen.erl"},{line,149}]},
+           {gen_server,call,3,[{file,"gen_server.erl"},{line,186}]},
+           {rpc,do_call,3,[{file,"rpc.erl"},{line,335}]},
+           {cbpanel_main_controller,login,3,
+               [{file,
+                    "/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},
+                {line,35}]},
+           {boss_web_controller,call_controller_action,3,
+               [{file,"src/boss/boss_web_controller.erl"},{line,316}]},
+           {boss_web_controller,apply_action,4,
+               [{file,"src/boss/boss_web_controller.erl"},{line,308}]},
+           {boss_web_controller,execute_action_inner,9,
+               [{file,"src/boss/boss_web_controller.erl"},{line,287}]},
+           {boss_web_controller_handle_request,process_dynamic_request,5,
+               [{file,"src/boss/boss_web_controller_handle_request.erl"},
+                {line,254}]}]},
+      {gen_server,call,
+          [{rex,"undef"},
+           {call,db_api,get_user,["kray","123"],<0.148.0>},
+           infinity]}} Stacktrace: [{rpc,rpc_check,1,[{file,"rpc.erl"},{line,360}]},{cbpanel_main_controller,login,3,[{file,"/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},{line,35}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-02-11 16:21:53.964 [error] <0.311.0> Error in controller, see console.log for details
+
+2015-02-11 16:21:53.965 [error] <0.311.0> POST /login [cbpanel] 500 0ms
+2015-02-11 16:21:56.469 [error] <0.317.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:22:00.953 [error] <0.319.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{gen,call,
+               [{rex,"undef"},
+                '$gen_call',
+                {call,db_api,get_user,["kray","123"],<0.148.0>},
+                infinity],
+               [{file,"gen.erl"},{line,149}]},
+           {gen_server,call,3,[{file,"gen_server.erl"},{line,186}]},
+           {rpc,do_call,3,[{file,"rpc.erl"},{line,335}]},
+           {cbpanel_main_controller,login,3,
+               [{file,
+                    "/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},
+                {line,35}]},
+           {boss_web_controller,call_controller_action,3,
+               [{file,"src/boss/boss_web_controller.erl"},{line,316}]},
+           {boss_web_controller,apply_action,4,
+               [{file,"src/boss/boss_web_controller.erl"},{line,308}]},
+           {boss_web_controller,execute_action_inner,9,
+               [{file,"src/boss/boss_web_controller.erl"},{line,287}]},
+           {boss_web_controller_handle_request,process_dynamic_request,5,
+               [{file,"src/boss/boss_web_controller_handle_request.erl"},
+                {line,254}]}]},
+      {gen_server,call,
+          [{rex,"undef"},
+           {call,db_api,get_user,["kray","123"],<0.148.0>},
+           infinity]}} Stacktrace: [{rpc,rpc_check,1,[{file,"rpc.erl"},{line,360}]},{cbpanel_main_controller,login,3,[{file,"/var/www/cbpanel/src/controller/cbpanel_main_controller.erl"},{line,35}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-02-11 16:22:00.955 [error] <0.319.0> Error in controller, see console.log for details
+
+2015-02-11 16:22:00.955 [error] <0.319.0> POST /login [cbpanel] 500 0ms
+2015-02-11 16:23:53.908 [error] <0.309.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:24:01.298 [error] <0.336.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:24:18.654 [error] <0.341.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:24:19.074 [error] <0.345.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:24:19.141 [error] <0.347.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:24:22.397 [error] <0.351.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:25:36.310 [error] <0.264.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:25:52.428 [error] <0.279.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:33:48.011 [error] <0.275.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:33:48.048 [error] <0.274.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:01.186 [error] <0.284.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:01.833 [error] <0.288.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:02.493 [error] <0.294.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:03.224 [error] <0.296.0> GET /about [cbpanel] 404 0ms
+2015-02-11 16:34:05.776 [error] <0.302.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:06.404 [error] <0.308.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:07.075 [error] <0.312.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:07.628 [error] <0.316.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:07.665 [error] <0.318.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:08.772 [error] <0.324.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:09.623 [error] <0.328.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:10.226 [error] <0.332.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:10.261 [error] <0.334.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:10.701 [error] <0.338.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:11.074 [error] <0.344.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:11.685 [error] <0.348.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:12.013 [error] <0.352.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:12.050 [error] <0.354.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:12.609 [error] <0.360.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:13.060 [error] <0.364.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:13.337 [error] <0.368.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:13.777 [error] <0.372.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:27.853 [error] <0.395.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:34:29.976 [error] <0.399.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:06.156 [error] <0.404.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:06.279 [error] <0.406.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:11.658 [error] <0.411.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:23.390 [error] <0.433.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:28.902 [error] <0.440.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:32.005 [error] <0.444.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:33.638 [error] <0.448.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:34.178 [error] <0.452.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:34.808 [error] <0.454.0> GET /about [cbpanel] 404 0ms
+2015-02-11 16:35:44.006 [error] <0.458.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:35:44.701 [error] <0.462.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:36:14.102 [error] <0.467.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:36:37.924 [error] <0.493.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:36:39.778 [error] <0.497.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:59:08.844 [error] <0.504.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:59:08.953 [error] <0.503.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:59:11.102 [error] <0.509.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 16:59:16.692 [error] <0.524.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:21.691 [error] <0.586.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:21.722 [error] <0.587.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:23.365 [error] <0.592.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:23.391 [error] <0.593.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:25.157 [error] <0.598.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:26.407 [error] <0.602.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:27.436 [error] <0.606.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:28.575 [error] <0.610.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:30.136 [error] <0.614.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:31.704 [error] <0.616.0> GET /about [cbpanel] 404 0ms
+2015-02-11 17:34:33.491 [error] <0.622.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:34.326 [error] <0.626.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:34:53.841 [error] <0.631.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:35:00.260 [error] <0.638.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:35:01.839 [error] <0.640.0> GET /about [cbpanel] 404 0ms
+2015-02-11 17:35:04.469 [error] <0.644.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:37:27.949 [error] <0.653.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:37:28.182 [error] <0.652.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:09.950 [error] <0.660.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:11.725 [error] <0.658.0> GET /about [cbpanel] 404 0ms
+2015-02-11 17:44:13.845 [error] <0.664.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:13.885 [error] <0.666.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:14.779 [error] <0.670.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:15.208 [error] <0.674.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:15.682 [error] <0.678.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:16.079 [error] <0.682.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:16.424 [error] <0.686.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:16.797 [error] <0.690.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:17.410 [error] <0.694.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:17.815 [error] <0.698.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:19.128 [error] <0.702.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:20.224 [error] <0.706.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:21.490 [error] <0.710.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:22.503 [error] <0.714.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:23.021 [error] <0.718.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:24.010 [error] <0.722.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:24.537 [error] <0.726.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:25.038 [error] <0.730.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:25.497 [error] <0.734.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:25.893 [error] <0.738.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:33.367 [error] <0.743.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:44:33.901 [error] <0.747.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:45:09.195 [error] <0.787.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:45:15.226 [error] <0.799.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:45:19.965 [error] <0.801.0> GET /development.html [cbpanel] 404 0ms
+2015-02-11 17:59:11.424 [error] <0.823.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:59:11.461 [error] <0.825.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms
+2015-02-11 17:59:31.694 [error] <0.846.0> GET /images/feed_icon_rss.png [cbpanel] 404 0ms

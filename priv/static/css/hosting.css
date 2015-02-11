@@ -1,0 +1,124 @@
+ul {
+    list-style-type: none;
+    margin: 0px;
+
+}
+
+.panel_type_logo
+{
+    background: url("../images/iconsSmokeySmall.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: 0 -4px;
+    height: 57px;
+    width: 57px;
+    float: left;
+    margin: 5px 0px 0px 5px;
+}
+
+.ipblock {
+    float: left;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 2px 34px 0 0;
+    width: 190px;
+}
+
+
+.tarif {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 18px;
+    width: 223px;
+}
+
+.tarif.active {
+    border-color: #1d85c1;
+    cursor: default;
+}
+
+.tarif-hdr {
+    background: none repeat scroll 0 0 #ccc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+}
+
+.tarif.active .tarif-hdr {
+    background: none repeat scroll 0 0 #1d85c1;
+}
+
+
+.tarif-price {
+    background: none repeat scroll 0 0 #fff;
+    color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 21px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.tarif-details li:nth-child(2n) {
+    background: none repeat scroll 0 0 #fff;
+}
+.tarif-details li {
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.tarif-details li > span {
+    display: inline-block;
+    width: 128px;
+}
+
+ins {
+    text-decoration: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("img/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 14px;
+}
+
+.icon-pwd {
+    background: url("../images/icon-gen.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 18px;
+    margin-top: 0;
+    width: 24px;
+}
+
+.icon-pwd.eye {
+    background-position: 0 0;
+}
+
+.icon-pwd.gen {
+    background-position: -24px 0;
+}
+
+.icon-pwd.eye.active, .icon-pwd.eye:hover {
+    background-position: 0 -18px;
+}
+
+.icon-pwd.gen:hover {
+    background-position: -24px -18px;
+}

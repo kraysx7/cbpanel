@@ -1,0 +1,188 @@
+body {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+html, body {
+    background: url("../images/background.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #2F2F2F;
+    height: 100%;
+    width: 100%;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-size: 1em;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+a, img, iframe, form, fieldset, abbr, acronym, object, applet { border: medium none; }
+
+a { color: #0B4A94; text-decoration: underline; }
+
+span.rur { display: inline;margin: 0; }
+span.rur { font-family: "Ruble Arial" !important; font-weight: normal !important; }
+
+.hide {
+    display: none;
+}
+
+
+div, span, h5, h6, p, em, img, strong, sub, b, u, i, dl, dt, dd, ol, ul, li, form, label, tbody, tfoot, thead {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+/*--------- HEADER ---------*/
+
+.navbar {
+    margin-bottom: 9px;
+    border: 0 none;
+}
+
+.navbar-inner {
+    position: relative;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(to bottom, #fbfbfb, #f2f2f2);
+    border-color: -moz-use-text-color -moz-use-text-color #c8c8c8 !important;
+    border-radius: 0 !important;
+    border-style: none none solid !important;
+    border-width: 0 0 1px !important;
+    box-shadow: 0 -3px 6px #777 !important;
+    height: 54px;
+    line-height: 54px;
+}
+
+.navbar-bottom-inner {
+    background-color: #f6f6f6;
+    background-image: linear-gradient(to bottom, #fbfbfb, #f2f2f2);
+    border-color: -moz-use-text-color -moz-use-text-color #c8c8c8 !important;
+    border-radius: 0 !important;
+    border-style: none none solid !important;
+    border-width: 0 0 1px !important;
+    box-shadow: 0 1px 4px #777 !important;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+}
+
+.container {
+    width: 986px !important;
+}
+
+#logo { margin-top: 9px; float: left; height: 40px; width: 140px; background: url("../images/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+
+#topmenu { float: left; padding-left: 10px; }
+
+#topmenu ul { 
+    list-style: none outside none; 
+}
+
+#topmenu li {
+    background-color: rgba(0, 0, 0, 0);
+    float: left;     
+    border: 0 none;
+}
+
+
+#topmenu li a {
+    color: #666666;
+    display: block;
+    font-size: 13px;
+    margin: 0 18px;
+    text-decoration: none;  
+}
+
+
+/*--------- CENTER ---------*/
+
+#center-wrapper { 
+    position: relative;
+    /*background: none repeat scroll 0 0 #ffffff;
+    min-height: 750px; */
+}
+
+#sidebar-first {
+    position: absolute;
+    width: 250px; 
+    height: 500px;
+    top: 0px;
+    margin: 40px 0px 0px 100px;
+}
+
+#sidebar-second {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    top: 0px;
+}
+
+#content-wrapper {
+    margin: 0px auto;
+    width: 1024px;
+}
+
+#content {
+    padding: 0px;
+}
+
+/*--------- FOOTER ---------*/
+
+#footer-wrapper {   
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: none;
+}
+
+#footer {
+    border-top: 1px dashed;
+    margin: 0px auto;
+    position: relative;
+    width: 1024px;
+	height: 100%;
+    background: none repeat-x scroll 0 0 rgba(255, 255, 255, 0.8);
+}
+
+#footer-content {
+    font-size: 12px;
+    padding: 30px;
+-webkit-box-shadow: 0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px -2px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 1);
+}
+
+#supwrap, .inner {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 930px;
+}
+
+.top-pict-home {
+    background: url("../images/bigpict-home.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 378px;
+    margin-bottom: 17px;
+    position: relative;
+    width: 930px;
+}
+
+
+
+
+
+.shadow_white{text-shadow: white 1px 0px, white 1px 1px, white 0px 1px, white -1px 1px, white -1px 0px, white -1px -1px, white 0px -1px, white 1px -1px, white 0 0 3px, white 0 0 3px, white 0 0 3px, white 0 0 3px, white 0 0 3px, white 0 0 3px, white 0 0 3px, white 0 0 3px;} 
+
+
+

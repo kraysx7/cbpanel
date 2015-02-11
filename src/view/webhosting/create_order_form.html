@@ -1,0 +1,198 @@
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+    function generatePassword() {
+        var length = 8,
+            charset = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&+=",
+            nums_charset="0123456789",
+            any_charset="@#$%^&+=",
+            retVal = "";
+        for (var i = 0, n = charset.length; i < length; ++i) {
+            retVal += charset.charAt(Math.floor(Math.random() * n));
+        }
+        
+        // Добавляем дополнительную цифру на случай,
+        // если пароль создался без цифр и  (иначе сервер его отклонит)
+        retVal += nums_charset.charAt(Math.floor(Math.random() * nums_charset.length));
+        retVal += any_charset.charAt(Math.floor(Math.random() * any_charset.length));
+        return retVal;
+    }
+
+    $("#tarifs .tarif").click(function( event ) {      
+        var tarif_obj = $(this); 
+        var service_id = tarif_obj.attr("serviceid");
+        
+        $("#tarifs .active input").remove();
+        $("#tarifs .active").removeClass("active");
+
+        tarif_obj.addClass("active");
+        tarif_obj.append('<input type="hidden" value="'+service_id+'" name="serviceid">');
+    });
+
+
+    //callback handler for form submit
+    $("#create_order_form").submit(function(e)
+    {
+        var postData = $(this).serializeArray();
+        var formURL = $(this).attr("action");
+        $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR)
+            {
+                $("#form_container").html(data);
+                $('body,html').animate({
+                    scrollTop: 53
+                }, 400);
+            },
+            error: function(jqXHR, textStatus, errorThrown)
+            {
+                //if fails
+                alert( data );
+            }
+        });
+        e.preventDefault(); //STOP default action
+        e.unbind(); //unbind. to stop multiple form submit.
+    });
+
+    
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $(".show-pwd").click(function() {
+        if($(this).hasClass("active"))
+        {
+            // Не показывать пароль
+            $(this).removeClass("active");
+            $("#password").attr("type", "password");
+        }
+        else
+        {
+            // Показывать пароль
+            $(this).addClass("active");
+            $("#password").attr("type", "text");            
+        }
+    });
+
+    $(".gen-pwd").click(function() {
+        var password = generatePassword();
+        $("#password").val(password);
+        $('#sendpassword').prop('checked', true);    
+    });
+
+});
+
+
+</script>
+
+<form name="create_order_form" id="create_order_form" action="/panel/webhosting/create_order" method="POST" class="navbar-form" role="form">
+
+    <h5>Настройка домена</h5>
+
+    {% if check_res and check_res.domain_name != "ok" %}
+        <div class="alert alert-danger" role="alert">Некоректное имя домена! (пример: clooud.ru)</div>
+    {% endif %}
+
+    <div class="control-group">
+         <label class="control-label">Название вашего сайта</label>
+
+        <div class="controls">
+            <input value="{{ domain_name }}" style="font-size:13px;" type="text" name="domainname" class="w262" placeholder="Имя домена" autocomplete="off"/>
+
+            <div id="show-password" style="display: none;"></div>
+            <span class="help-block"></span>
+        </div>
+    </div>
+
+    <h5>Тарифный план</h5>
+    
+    {% if check_res and check_res.service_id != "ok" %}
+        <div class="alert alert-danger" role="alert">Ошибка выбора тарифа.</div>
+    {% endif %}
+
+    <div class="row">
+         <div id="tarifs">
+        {% for s in services %}
+
+            {% if s.service_id == service_id %}
+            <div class="tarif active" serviceid="{{ s.service_id }}">
+            <input type="hidden" value="{{ service_id }}" name="serviceid">
+            {% else %}
+            <div class="tarif" serviceid="{{ s.service_id }}">
+            {% endif %}          
+                <div class="tarif-hdr">{{ s.name }}</div>
+
+                <div class="tarif-price"><span class="price">{% get_month_cost s.cost "in_rub" %}<span class="rur">Р</span></span> в месяц</div>
+                <ul class="tarif-details">
+                    <li>
+                        <span>Количество хостов</span>
+                        <ins>{{ s.params.vhosts }}</ins>
+                    </li>
+                    <li>
+                        <span>Количество БД</span>
+                        <ins>{{ s.params.dbcount }}</ins>
+                    </li>
+                    <li>
+                        <span>Жесткий диск</span>
+                        <ins>{{ s.params.hdd }} Mб</ins>
+                    </li>
+                    <li class="nowrap">
+                        <span>Включенный трафик</span>
+                        <ins>&infin;</ins>
+                    </li>
+                    <li>
+                        <span>Стоимость за сутки</span>
+                        <ins>{% divide s.cost 100 %} <span class="rur">P</span></ins>
+                    </li>
+                </ul>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+
+    <h5>Настройка доступа</h5>
+    
+    {% if check_res and check_res.password != "ok" %}
+        <div class="alert alert-danger" role="alert">Ошибка ввода пароля</div>
+    {% endif %}
+
+    <div class="control-group">
+        <label for="password" class="control-label">Пароль для доступа в панель управления</label>
+
+        <div class="controls">
+            <input value="{{ password }}" type="password" id="password" name="password" placeholder="Пароль" autocomplete="off"/>
+            <span class="add-on">
+                <i class="icon-pwd eye show-pwd" data-toggle="tooltip" data-placement="bottom" title="Показать пароль"></i>
+                <i class="icon-pwd gen gen-pwd"  data-toggle="tooltip" data-placement="bottom" title="Сгенерировать пароль"></i>
+            </span>
+
+            <div id="show-password" style="display: none;"></div>
+            <span class="help-block"></span>
+        </div>
+    </div>
+
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="sendpassword" name="sendpassword" value="" checked> Отправить пароль на электронную почту
+        </label>
+    </div>
+
+    <span class="help-block" style="font-size: 11px;">
+    <i>Минимальная длина - 8 символов. Пароль должен состоять из латинских букв в разном регистре и хотя бы из одной цифры и спецcимвола @#$%^&+= &nbsp;&nbsp;&nbsp;&nbsp;</i>
+    <i style="color:#1e8ac8;">Рекомендуем воспользоваться генерацией пароля.</i></span>
+
+    <div class="control-group submbtn ">
+        <label class="control-label"></label>
+            <div class="controls">
+                <a class="btn btn-default" href="/panel/webhosting">Отмена</a> 
+                <!-- <input type="submit" id="submit" name="submit" value="Подключить хостинг" /> -->
+                <button class="btn btn-warning" type="submit">Подключить хостинг</button> 
+            </div>
+    </div>
+
+    <div class="h_sep"></div>
+</form>

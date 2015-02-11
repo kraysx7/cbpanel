@@ -1,0 +1,127 @@
+
+#register-wrapper { padding: 70px; }
+#register { margin: 0px auto; }
+
+/*--------------------*/
+
+#register
+{
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background-image: -webkit-linear-gradient(top, #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #eee);
+	background-image: -ms-linear-gradient(top, #fff, #eee);
+	background-image: -o-linear-gradient(top, #fff, #eee);
+	background-image: linear-gradient(top, #fff, #eee);  
+	padding: 30px;
+	z-index: 0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;  
+	-webkit-box-shadow:
+	0 0 2px rgba(0, 0, 0, 0.2),
+	0 1px 1px rgba(0, 0, 0, .2),
+	0 3px 0 #fff,
+	0 4px 0 rgba(0, 0, 0, .2),
+	0 6px 0 #fff,  
+	0 7px 0 rgba(0, 0, 0, .2);
+	-moz-box-shadow:
+	0 0 2px rgba(0, 0, 0, 0.2),  
+	1px 1px   0 rgba(0,   0,   0,   .1),
+	3px 3px   0 rgba(255, 255, 255, 1),
+	4px 4px   0 rgba(0,   0,   0,   .1),
+	6px 6px   0 rgba(255, 255, 255, 1),  
+	7px 7px   0 rgba(0,   0,   0,   .1);
+
+	box-shadow: 	
+	0 0 2px rgba(0, 0, 0, 0.2), 
+	0 1px 1px rgba(0, 0, 0, 0.2), 
+	0 3px 0 #fff, 
+	0 2px 0 rgba(0, 0, 0, 0.2), 
+	0 2px 0 #fff, 
+	0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------*/
+
+#register h1
+{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 1px 0 rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    text-align: center;
+    color: #666;
+    margin: 0 0 30px 0;
+    letter-spacing: 4px;
+    font: normal 26px/1 Verdana, Helvetica;
+    position: relative;
+}
+
+/*--------------------*/
+
+#register input
+{
+    background: #f1f1f1 url(../images/login-sprite.png) no-repeat;
+    padding: 5px 15px 5px 30px;
+    margin: 0 0 10px 0;
+    height: 45px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+#register #username
+{
+    background-position: 5px -2px !important;
+}
+
+#register #email
+{
+    background-position: 5px -2px !important;
+}
+
+#register #password1
+{
+    background-position: 5px -52px !important;
+}
+
+#register #password2
+{
+    background-position: 5px -52px !important;
+}
+
+#register input:focus
+{
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+#register #submit
+{
+    font: bold 14px Arial,Helvetica;
+    padding: 10px;
+}
+
+
+/*--------------------*/
+#register #actions
+{
+    margin: 25px 0 0 0;
+}
+
+#register #actions a
+{
+    color: #3151A2;    
+    float: right;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 12px;
+}

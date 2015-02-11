@@ -1,0 +1,15 @@
+{% extends "panel/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/hosting.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/form.css">
+
+{% endblock %}
+
+{% block tab_content %}
+		<h3>Подключение новой услуги хостинга</h3>     
+        <div id="form_container">
+            {% include "webhosting/create_order_form.html" %}
+        </div> <!-- /form_container -->
+{% endblock %}

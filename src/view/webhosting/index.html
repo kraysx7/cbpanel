@@ -1,0 +1,56 @@
+{% extends "panel/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" media="screen" href="/static/css/hosting.css">
+{% endblock %}
+
+{% block tab_content %}
+<div class="container-fluid">
+		<h5>WEB хостинг</h5> 
+		<div class="h_sep"></div>
+        
+        <div style="display: flex;"><a class="btn btn-warning" href="/panel/webhosting/create_order">Заказать хостинг</a></div> 
+        <br />
+        
+
+        {% for us in user_services %}
+            <div class="infopanel-container">
+                <div class="green"></div>
+
+                <div class="panel">
+                   
+                    <div class="panel_type_logo"></div>
+                    <div class="ipblock">
+                    <ul>
+                        <li>
+                            Тариф: <strong>{{ us.name }}</strong>
+                        </li>
+                        <li> <a href="https://188.35.184.6:4089/">панель управления</a> </li>
+                    </ul>
+                    </div>
+
+                    <div class="ipblock">
+                    <ul>
+                        <li>
+                            <strong>IP адрес</strong>
+                        </li>
+                        <li> 185.22.63.25 </li>
+                    </ul>
+                    </div>
+
+                    <div class="ipblock">
+                    <ul>
+                        <li>
+                           <strong>Расход:</strong> 341,4р в месяц
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="hr"></div>
+                    VH {{ us.params.vhosts }} | DB {{ us.params.dbcount }} | HDD  {{ us.params.hdd }} 
+                    <a href="/panel/service/stop">Отключить услугу</a>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+{% endblock %}

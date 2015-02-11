@@ -1,0 +1,37 @@
+-module(cbserver).
+-compile([export_all]).
+
+
+register(UserName, Password, Email) -> ok.
+
+
+
+auth(UserName, Password) -> ok.
+
+
+
+logout(UserId, SessionKey) -> ok.
+    
+
+get_user(UserName, Password) ->
+    Node = config:get(cbserver_node),
+    rpc:call(Node, 'db_api', 'get_user', [UserName, Password]). 
+
+get_services(Type) ->
+    Node = config:get(cbserver_node),
+    rpc:call(Node, 'db_api', 'get_services', [Type]).
+
+
+get_user_services({user_id, UserId}) ->
+    Node = config:get(cbserver_node),
+    rpc:call(Node, 'db_api', 'get_user_services', [{user_id, UserId}]).
+
+
+add_new_order(UserId, ServiceId, Params, Period, ProcessingMode) ->
+    Node = config:get(cbserver_node),
+    Args = [UserId, ServiceId, Params, Period, ProcessingMode],
+    rpc:cast(Node, 'orders_controller', 'add_new_order', Args).
+
+
+
+

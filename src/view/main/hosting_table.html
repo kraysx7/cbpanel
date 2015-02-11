@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/commons.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/login.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/static/css/panel.css">
+</head>
+<body>
+<div id="main_container">
+    <div id="header-wrapper"><div id="header">
+
+        <div id="logo"> 
+        </div>
+        <div id="topmenu">
+            <ul>
+                <li><a href="/" class="shadow_white">главная</a></li>                
+                <li><a href="/" class="shadow_white">web-хостинг</a></li>
+                <li><a href="/" class="shadow_white">vps</a></li>
+                <li><a href="/" class="shadow_white">о нас</a></li>
+                <li><a href="/" class="shadow_white">техподдержка</a></li>
+                <li>| {{ user_data.name }} (Баланс: {{ user_data.balance }})<a href="/logout" class="shadow_white" style="color: #182b55;"> выход</a></li>
+            </ul>      
+        </div> <!-- topmenu -->
+    </div></div> <!-- /header --><!-- /header-wrapper -->
+
+    <div id="center-wrapper">
+
+        <div id="content-wrapper"><div id="content">
+            
+		<div class="server-page-wrapper">
+			<div class="server-page">
+                <div class="head-block">
+                    <h1>Виртуальный хостинг сайтов</h1>
+                </div>
+
+				<div class="h_sep"></div>
+					<table class="vhosting-tariffs">
+						<tr>
+							<th class="desc">Выберите тариф</td>
+                            {% for s in services %} <th class="heading">{{ s.name }}</td> {% endfor %}
+						</tr>
+						<tr>
+							<td>Место на диске</td>
+                            {% for s in services %} <td>{{ s.params.hdd }}</td> {% endfor %}
+						</tr>
+						<tr>
+							<td>Количество сайтов</td>
+                            {% for s in services %} <td>{{ s.params.vhosts }}</td> {% endfor %}
+						</tr>
+						<tr>
+							<td>Количество БД</td>
+                            {% for s in services %} <td>{{ s.params.dbcount }}</td> {% endfor %}
+						</tr>
+						<tr>
+							<td>Допустимая нагрузка</td>
+							<td>5%</td>
+							<td>10%</td>
+							<td>20%</td>
+							<td>30%</td>
+						</tr>
+						<tr>
+							<td>Траффик</td>
+							<td>Безлимитный</td>
+							<td>Безлимитный</td>
+							<td>Безлимитный</td>
+							<td>Безлимитный</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>0 р.</td>
+							<td>9 р.</td>
+							<td>49 р.</td>
+							<td>99 р.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a class="button">Подробнее</a></td>
+							<td><a class="button">Подробнее</a></td>
+							<td><a class="button">Подробнее</a></td>
+							<td><a class="button">Подробнее</a></td>
+						</tr>
+
+					</table>
+
+				<div class="order">
+                   
+				</div>
+			</div>
+		</div>
+
+        </div></div> <!-- /content --><!-- /content-wrapper -->
+
+    </div> <!-- center-wrapper -->
+
+
+    <div id="footer-wrapper">
+        <div id="footer">
+             <div id="footer-content"><a href="/hosting_table">Clooud Hosting Ltd</a>  / 2014</div>
+        </div>
+    </div> <!-- footer -->
+</div>
+
+</body>
+</html>

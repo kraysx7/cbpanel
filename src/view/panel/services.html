@@ -1,0 +1,28 @@
+{% extends "panel/base.html" %}
+
+{% block tab_content %}
+		<h1>Подключенные услуги</h1> 
+		<div class="h_sep"></div>
+
+        
+		<div class="services-table">
+			<table id="hosting-services-table">
+                
+				<tr class="hosting-desc">
+					<td>Тариф</td>
+					<td>Параметры</td>
+					<td>Дата отключения</td>
+					<td class="row-last"></td>
+				</tr>
+
+                {% for us in user_services %}
+                <tr class="{% cycle 'hosting-service1' 'hosting-service2' %}">
+					<td>{{ us.name }}</td>
+					<td>{{ us.params.vhosts }} доменов; 10 Бд mysql; hdd 1000Mb</td>
+					<td class="expire-date">13.10.2014 00:00:00 (осталось 4 дня)</td>
+					<td class="row-last">Продлить</td>
+                </tr>
+                {% endfor %}
+			</table>
+		</div>
+{% endblock %}
